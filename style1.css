@@ -1,0 +1,199 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 45px;
+  margin: 3px 6px;
+  border-radius: 13px;
+  top: 0px;
+  left: 0px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.135);
+  position: absolute;
+  height: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  border-radius: 7px;
+}
+#navbar ul li {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+#navbar ul li a {
+  display: block;
+  padding: 3px 23px;
+  margin: 12px 25px;
+  border-radius: 23px;
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: rgb(165, 179, 255);
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 230px;
+  height: 615px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("../img/background/med11.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 645px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.87;
+}
+#home h1 {
+  /* color: white; */
+  text-align: center;
+}
+#home p {
+  font-size: 1.1em;
+}
+.primary {
+  text-align: center;
+  font-size: 3.1rem;
+  padding: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sec {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.1rem;
+  padding: 12px;
+}
+.btn {
+  padding: 7px 20px;
+  border: 2px solid #0000009c;
+  color: black;
+  background-color: #9898b73b;
+  border-radius: 10px;
+  margin: 18px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(131, 149, 246);
+}
+.services {
+  display: flex;
+  /* margin: 23px; */
+  flex-direction: column;
+  margin: 40px 0px;
+}
+#services .box img {
+  /* display: block; */
+  width: 200px;
+  margin: auto;
+  border-radius: 23px;
+}
+.box {
+  display: inline-block;
+  border: 2px solid black;
+  width: 350px;
+  padding: 23px;
+  margin: 13px;
+  border-radius: 23px;
+  background-color: #0000003b;
+  text-align: center;
+}
+#services p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client {
+  height: 350px;
+}
+.client::before {
+  content: "";
+  position: absolute;
+  background: url("../img/background/med.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.4;
+  height: 56%;
+  width: 100%;
+}
+#clients img {
+  height: 90px;
+  border-radius: 23px;
+}
+.item {
+  padding: 18px 9px;
+}
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  height: 720px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url("../img/logo/contact.jfif") no-repeat center center/cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1px 20px;
+  text-align: center;
+}
+input {
+  font-size: 1.1rem;
+}
+#contact-id {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 12px;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  border-radius: 13px;
+  padding: 0.5rem;
+}
+
+/* .center{
+  text-align: center;
+  margin: 12px 50px;
+  display: block;
+  font-size: 3.1rem;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} */
+#contact form {
+  width: 40%;
+}

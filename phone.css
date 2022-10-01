@@ -1,0 +1,22 @@
+.services{
+    flex-direction: column;
+}
+#client{
+    overflow: hidden;
+}
+#navbar{
+    flex-direction: column;
+}
+#home{
+    height: 400px;
+    padding: 4px 60px;
+}
+#home::before{
+    height: 600px;
+}
+#home p{
+    font-size: 12px;
+}
+.primary{
+    font-size: 1.2rem;
+}
